@@ -1,8 +1,17 @@
-import java.io.*;
+package ir.amv.snippets.codeeval.gameoflife;
 
-public class Main {
-    public static void main (String[] args) throws IOException {
-        File file = new File(args[0]);
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+/**
+ * Created by AMV on 8/5/2016.
+ */
+public class GameOfLife {
+
+    public static void main(String[] args) throws IOException {
+        File file = new File("moderate-level/GameOfLife.data");
         BufferedReader buffer = new BufferedReader(new FileReader(file));
         String line;
         int row = 0;
