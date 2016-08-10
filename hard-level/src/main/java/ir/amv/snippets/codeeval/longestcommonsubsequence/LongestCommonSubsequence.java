@@ -1,10 +1,19 @@
-import java.io.*;
+package ir.amv.snippets.codeeval.longestcommonsubsequence;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
-    public static void main (String[] args) throws IOException {
-        File file = new File(args[0]);
+/**
+ * Created by AMV on 8/9/2016.
+ */
+public class LongestCommonSubsequence {
+
+    public static void main(String[] args) throws IOException {
+        File file = new File("hard-level/LongestCommonSubsequence.data");
         BufferedReader buffer = new BufferedReader(new FileReader(file));
         String line;
         while ((line = buffer.readLine()) != null) {
@@ -81,4 +90,5 @@ public class Main {
         }
         return result;
     }
+
 }
